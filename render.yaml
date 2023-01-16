@@ -1,0 +1,18 @@
+databases:
+  - name: gossip
+    databaseName: gossip
+    user: gossip
+
+services:
+  - type: web
+    name: gossip
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gossip
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
