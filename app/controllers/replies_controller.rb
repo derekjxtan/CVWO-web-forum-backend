@@ -44,8 +44,10 @@ class RepliesController < ApplicationController
   def destroy
     if @reply.user_id == @current_user.id
       @reply.destroy
-      count = Reply.where(reply_id: @reply.reply_id).count
-      Reply.find(@reply.reply_id).update(replies_count: count)  
+      if @reply_id.reply_id != nil
+        count = Reply.where(reply_id: @reply.reply_id).count
+        Reply.find(@reply.reply_id).update(replies_count: count)  
+      end
     else
       render json: @reply.errors, status: :unauthorized
     end
