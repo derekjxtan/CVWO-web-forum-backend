@@ -3,7 +3,8 @@ This is repo contains the source code for the backend implementation of the CVWO
 
 Name: Tan Jing Xu, Derek\
 Matriculation Number: A0196465N\
-Link to final writeup: https://github.com/derekjxtan/CVWO-web-forum-backend/blob/main/Tan%20Jing%20Xu%20Derek_A0196465N_FinalWriteup.pdf
+Link to final writeup: https://github.com/derekjxtan/CVWO-web-forum-backend/blob/main/Tan%20Jing%20Xu%20Derek_A0196465N_FinalWriteup.pdf \
+Link to front end repo: https://github.com/derekjxtan/CVWO-web-forum-frontend
 
 ## Link to deployed app on Netlify: https://heartfelt-rugelach-c1701b.netlify.app
 This project is implemented with Ruby on Rails, using PostgreSQL as the database. Currently working version is deployed on Render.
